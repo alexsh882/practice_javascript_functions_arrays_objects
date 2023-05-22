@@ -23,3 +23,21 @@ console.log(calcularAreaRectangulo(10, 20));
 function calcularAreaRectangulo(base, altura) {
   return base * altura;
 }
+
+
+// Implementa una función llamada &quot;esPalindromo&quot; que reciba una cadena como parámetro y
+// devuelva true si la cadena es un palíndromo (se lee igual de izquierda a derecha y de derecha a
+// izquierda), y false en caso contrario. Por ejemplo, para la cadena &quot;radar&quot; la función debería
+// devolver true.
+
+function esPalindromo(valor){    
+  let valorReverse = valor.split('').reverse().join('');
+  return valorReverse === valor;
+}
+
+console.log("");
+console.log("Función esPalindromo:");
+console.log(esPalindromo('radar'));
+console.log(esPalindromo('otra'));
+console.log(esPalindromo('neuquen'));
+
