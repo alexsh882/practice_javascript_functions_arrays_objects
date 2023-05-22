@@ -41,3 +41,12 @@ console.log(esPalindromo('radar'));
 console.log(esPalindromo('otra'));
 console.log(esPalindromo('neuquen'));
 
+
+// Crea una función llamada "generarNumeroAleatorio" que no tome parámetros y devuelva un número entero aleatorio entre 1 y 10.
+
+const generarNumeroAleatorio = () =>  
+   Math.floor(Math.random() * 10); //MULTIPLICO POR 10 Y REDONDEO
+
+console.log("");
+console.log("Función generarNumeroAleatorio:");
+console.log(generarNumeroAleatorio());
