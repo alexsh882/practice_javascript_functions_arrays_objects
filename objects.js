@@ -31,3 +31,12 @@ const presentarPersona = (persona) => {
 }
 
 console.log(presentarPersona(persona));
+
+// Crea una función llamada "esMayorEdad" que reciba un objeto persona como parámetro 
+// y devuelva true si la persona es mayor de edad (edad mayor o igual a 18), y false en caso contrario.
+
+const esMayorEdad = (persona) => {
+    return persona.edad >= 18;
+}
+
+console.log(esMayorEdad(persona));
