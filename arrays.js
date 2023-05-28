@@ -59,3 +59,20 @@ const obtenerPromedioPonderado = (arrayNotas, arrayPesos) => {
 
 console.log(obtenerPromedioPonderado(notas, peso));
 
+// ========================================================
+const obtenerMaximo = (array) => { 
+
+    let maximo = 0;
+
+    for (numero of array) {
+        if (maximo < numero) {
+            maximo = numero;
+        }
+    }
+
+    return maximo;
+}
+
+console.log(obtenerMaximo(numbers))
+
+console.log(sumar(a,b));
