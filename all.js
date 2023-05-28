@@ -60,3 +60,29 @@ const conversor = (temperatura, seleccion) => {
 }
 
 alert(conversor(temperatura, seleccion));
+
+
+// 4)	Crear un programa para calcular el total de una compra. 
+// Para ello se tiene que pedir al usuario que ingrese el precio de cada producto 
+// y cuando se le pide que ingrese la palabra "total" devolverle el total de la compra.
+
+const compras = () => {
+
+    let total = [];
+    let precio = 0;
+    do {
+        precio = prompt("Ingresar el precio del producto");
+        if (precio != "total") {
+            total.push(precio);
+        }        
+        
+    } while (precio != "total");
+    let totalCompra = 0;
+    for (let i = 0; i < total.length; i++) {
+        totalCompra = totalCompra + total[i];       
+    }
+
+    alert("El total de la compra es: " + totalCompra);
+}
+
+compras();
