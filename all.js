@@ -34,3 +34,29 @@ const esPrimo = (numeroPrimo) => {
 
 alert(esPrimo(numeroPrimo));
 
+// 3)	Crear un programa que convierta la temperatura de grados Celsius a Faranheit y viceversa. 
+// El usuario debería ingresar la temperatura y a que unidad la quiere convertir.
+
+const temperatura = prompt("Ingresa un número para temperatura");
+const seleccion = prompt("Ingresa a que unidad queres convertir \n 1- Celsius a Faranheit \n 2- Faranheit a Celsius");
+
+
+const conversor = (temperatura, seleccion) => {
+
+    let value;
+    switch (seleccion) {
+        case "1":
+            value = ((temperatura * (9/5)) + 32) + "°F";
+            break;
+        case "2":
+            value = ((temperatura - 32) * 5/9) + "°C";
+            break;    
+        default:
+            value = "Seleccionaste una opción incorrecta. No se puede calcular.";
+            break;
+    }
+
+    return value;
+}
+
+alert(conversor(temperatura, seleccion));
