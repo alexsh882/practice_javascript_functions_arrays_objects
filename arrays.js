@@ -39,3 +39,23 @@ const obtenerPares = (array) => {
 
 console.log(obtenerPares(numbers));
 
+//======================================================
+
+let notas = [5,6,7,8,9,10];
+let peso = [1,2,3,4,5,6];
+
+const obtenerPromedioPonderado = (arrayNotas, arrayPesos) => {
+
+    let sumaPonderada = 0;
+    let sumaPeso = 0;
+
+    for (let i = 0; i < arrayNotas.length; i++) {
+        sumaPonderada = sumaPonderada + (arrayNotas[i] * arrayPesos[i]) 
+        sumaPeso = sumaPeso + arrayPesos[i];
+    }
+
+    return sumaPonderada / sumaPeso;
+}
+
+console.log(obtenerPromedioPonderado(notas, peso));
+
