@@ -15,3 +15,19 @@ const calcularTotal = (producto) => {
 
 
 console.log(calcularTotal(producto));
+
+// Implementa un objeto llamado "persona" con las propiedades "nombre", "edad" y "profesion". 
+// A continuación, escribe una función llamada "presentarPersona" que tome un objeto persona como parámetro 
+// y muestre en la consola una presentación de la persona.
+
+const persona = {
+    nombre : "Alejandro",
+    edad : 33,
+    profesion: "Developer"
+}
+
+const presentarPersona = (persona) => {
+    return "Hola, me llamo " + persona.nombre + " tengo " + persona.edad + " años y soy " + persona.profesion;
+}
+
+console.log(presentarPersona(persona));
