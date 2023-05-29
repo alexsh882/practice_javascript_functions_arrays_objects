@@ -1,8 +1,3 @@
-let boton = document.querySelector('button');
-
-boton.innerText = 'Botón';
-
-
 // Crea una función llamada obtenerSuma 
 // que reciba un arreglo de números como parámetro y
 // devuelva la suma de todos los elementos del arreglo.
@@ -74,5 +69,3 @@ const obtenerMaximo = (array) => {
 }
 
 console.log(obtenerMaximo(numbers))
-
-console.log(sumar(a,b));
